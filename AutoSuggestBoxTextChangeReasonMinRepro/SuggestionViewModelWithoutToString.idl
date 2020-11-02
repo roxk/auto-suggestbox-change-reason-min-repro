@@ -1,0 +1,9 @@
+namespace AutoSuggestBoxTextChangeReasonMinRepro
+{
+    [default_interface]
+    runtimeclass SuggestionViewModelWithoutToString : Microsoft.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        SuggestionViewModelWithoutToString(String displayName);
+        String DisplayName{ get; };
+    }
+}

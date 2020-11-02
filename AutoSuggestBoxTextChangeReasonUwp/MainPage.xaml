@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="AutoSuggestBoxTextChangeReasonUwp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AutoSuggestBoxTextChangeReasonUwp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="With ToString"/>
+        <AutoSuggestBox
+            Margin="0, 12, 0, 0"
+            Width="500"
+            QueryIcon="Find"
+            PlaceholderText="Search"
+            TextChanged="AutoSuggestBox_TextChanged"
+            SuggestionChosen="AutoSuggestBox_SuggestionChosen"
+            QuerySubmitted="AutoSuggestBox_QuerySubmitted"
+            ItemsSource="{x:Bind Suggestions}">
+        </AutoSuggestBox>
+        <TextBlock Text="Without ToString" Margin="0, 20, 0, 0"/>
+        <AutoSuggestBox
+            Margin="0, 12, 0, 0"
+            Width="500"
+            QueryIcon="Find"
+            PlaceholderText="Search"
+            TextChanged="AutoSuggestBox_TextChanged_Without_ToString"
+            SuggestionChosen="AutoSuggestBox_SuggestionChosen_Without_ToString"
+            QuerySubmitted="AutoSuggestBox_QuerySubmitted_Without_ToString"
+            ItemsSource="{x:Bind Suggestions}">
+        </AutoSuggestBox>
+    </StackPanel>
+</Page>

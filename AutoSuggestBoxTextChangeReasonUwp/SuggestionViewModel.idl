@@ -1,0 +1,9 @@
+namespace AutoSuggestBoxTextChangeReasonUwp
+{
+    [default_interface]
+    runtimeclass SuggestionViewModel : Windows.UI.Xaml.Data.INotifyPropertyChanged, Windows.Foundation.IStringable
+    {
+        SuggestionViewModel(String displayName);
+        String DisplayName{ get; };
+    }
+}

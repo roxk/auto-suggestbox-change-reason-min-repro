@@ -1,0 +1,9 @@
+namespace AutoSuggestBoxTextChangeReasonUwp
+{
+    [default_interface]
+    runtimeclass SuggestionViewModelWithoutToString : Windows.UI.Xaml.Data.INotifyPropertyChanged
+    {
+        SuggestionViewModelWithoutToString(String displayName);
+        String DisplayName{ get; };
+    }
+}

@@ -1,0 +1,10 @@
+namespace AutoSuggestBoxTextChangeReasonMinRepro
+{
+    [default_interface]
+    runtimeclass MainPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        MainPage();
+        IObservableVector<IInspectable> Suggestions{ get; };
+        IObservableVector<IInspectable> SuggestionWithoutToStrings{ get; };
+    }
+}
